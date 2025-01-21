@@ -9,20 +9,22 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
+    <div class="container">
     <header>
-      <h1>Welcome to the AI Poem generator</h1>
+      <h1>AI Poem Generator</h1>
     </header>
 <main>
   <form>
-    <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off"/>
-  <input type="submit"/>
-  <br>
+    <input type="text" placeholder="Enter the topic of the poem" autofocus required autocomplete="off" class="instructions"/>
+  <input type="submit" class="submitBtn"/>
+</form>
+  <div class="poem">
     The poem will go here
     <br/>
   </div>
-  </form>
 </main>
     <footer> This AI project was coded by <a href="https://github.com/kamilanitta">Kamila Nitta</a> and is open-sourced on <a href="https://github.com/kamilanitta/poem-generator">Github</a> and is hosted on <a href="poem-generator-knitta.netlify.app">Netlify</a></footer>
+  </div>
     <script src="./index.js"></script>
   </body>
 </html>
