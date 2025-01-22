@@ -10,6 +10,9 @@ const displayPoem = (res) => {
 const generatePoem = (event) => {
   event.preventDefault()
   let userInstructions = document.querySelector("#user-instructions")
+  let poemElement = document.querySelector("#poem")
+  poemElement.classList.remove("hidden")
+  poemElement.innerHTML = `<div><span class='blink'>⏳</span> Generating a poem about ${userInstructions.value}</div>`
 
   let apiKey = "93b55a8f5451ff836432to73a1c94b02"
   let context =
